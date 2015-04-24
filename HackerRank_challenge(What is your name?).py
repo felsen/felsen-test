@@ -1,6 +1,6 @@
 
-first_name = raw_input('Please Enter the first name : ')
-last_name = raw_input('Please, Enter the last name : ')
+first_name = raw_input()
+last_name = raw_input()
 
 if first_name and last_name:
     if len(first_name) <= 10 and len(last_name) <= 10:
