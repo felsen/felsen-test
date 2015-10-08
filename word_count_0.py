@@ -1,5 +1,6 @@
 import re
 
+
 class WordsToNumbers():
     """A class that can translate strings of common English words that
     describe a number into the number described
@@ -18,7 +19,7 @@ class WordsToNumbers():
                  'seven': 7, 'seventeen':  17,
                  'eight': 8, 'eighteen':   18,
                  'nine':  9, 'nineteen':   19 }
-    
+
     # a mapping of digits to their names when they appear in the 'tens'
     # place within a number group
     __tens__ = { 'ten':     10,
@@ -30,7 +31,7 @@ class WordsToNumbers():
                  'seventy': 70,
                  'eighty':  80,
                  'ninety':  90 }
-    
+
     # an ordered list of the names assigned to number groups
     __groups__ = { 'thousand':  1000,
                    'million':   1000000,
@@ -73,7 +74,7 @@ class WordsToNumbers():
         words = words.lower()
         # create a list to hold the number groups as we find them within
         # the word string
-        groups = {}        
+        groups = {}
         # create the variable to hold the number that shall eventually
         # return to the caller
         num = 0
@@ -133,8 +134,8 @@ class WordsToNumbers():
             # its multiplier
             num = num + (group_num * group_multiplier)
         # the loop is complete, return the result
-        return num            
-        
+        return num
+
 if __name__ == "__main__":
     # here is an example you can use to test the results
     nums = [
